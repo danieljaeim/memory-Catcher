@@ -1,0 +1,191 @@
+* {
+    box-sizing: border-box; 
+}
+
+
+@font-face {
+    font-family: "Pokemon Solid";
+    src: url("fonts/Pokemon\ Solid.ttf");
+    src: 
+    url("fonts/Pokemon\ Solid.ttf") format("woff"),
+    url("fonts/Pokemon\ Solid.ttf") format("opentype"),
+    url("fonts/Pokemon\ Solid.ttf") format("svg");
+    }
+
+body {
+    height: 100vh; 
+    background-image: url(img/background.gif); 
+    background-size: cover;
+    background-repeat: repeat-y;
+    background-position: center center; 
+    display: flex;  
+}
+
+h1{
+    position: relative; 
+    font-size: 60px; 
+    text-align: center; 
+    text-shadow: -4px 0 black, 0 4px black, 4px 0 black, 0 -4px black;
+    color: orangered;
+    font-family: 'Pokemon Solid';
+}
+
+.game-info {
+    position: relative;  
+    font-size: 45px; 
+    text-align: center; 
+    font-family: "Pokemon Solid";
+    color: yellow; 
+    text-shadow: -4px 0 black, 0 4px black, 4px 0 black, 0 -4px black;
+}
+
+.board {
+    position: relative; 
+    bottom: 100px; 
+    width: 820px; 
+    height: 800px; 
+    display: flex; 
+    flex-wrap: wrap; 
+    perspective: 1000px; 
+}
+
+.memory-card {
+    width: calc(16.6667% - 2px); 
+    height: calc(16.667% - 3px);
+    position: relative; 
+    border: 4px solid black;
+    border-radius: 10px; 
+    transform: scale(1);
+    transform-style: preserve-3d; 
+    transition: transform 150ms ease-in-out; 
+}
+
+.memory-card:active {
+    transform: scale(.97);
+}
+
+.memory-card.flip {
+    transform: rotateY(180deg);
+}
+
+.game-container {
+    position: relative; 
+    left: 0; 
+    right: 0; 
+}
+
+.button { 
+    display: inline-block;  
+    position: relative; 
+    left: 230px; 
+    text-align: center; 
+    font-family: 'Pokemon Solid';
+    font-size: 50px; 
+    z-index: 5;
+    width: 350px; 
+    height: 100px;  
+    border-radius: 50px; 
+    background: beige;
+}
+
+.button:hover {
+    cursor: pointer; 
+    color: skyblue;
+}
+
+.front-face,  
+.back-face {
+    position: absolute; 
+    width: 100%; 
+    height: 100%; 
+    border-radius: 10px;  
+    padding: 5px; 
+    backface-visibility: hidden; 
+}
+
+.back-face {
+    background: rgb(236, 93, 57); 
+}
+
+
+.front-face {
+    transform: rotateY(180deg);
+}
+
+img {
+    width: 120px;  
+    height: 120px; 
+    border: 2px solid deeppink; 
+}
+
+#polywag { 
+    background: darkcyan;
+}
+
+#slowpoke {
+    background: pink; 
+}
+
+#meowth {
+    background: bisque; 
+}
+
+#magikarp {
+    background: darksalmon;
+}
+
+#abra {
+    background: purple;
+}
+
+#tangela {
+    background: yellowgreen; 
+}
+
+#chansey {
+    background: hotpink; 
+}
+
+#mew {
+    background: rgb(248, 207, 213); 
+}
+
+#gengar {
+    background: rgb(59, 2, 59); 
+}
+
+#articuno {
+    background:lightcyan;
+}
+
+#zaptos {
+    background: rgb(249, 250, 193); 
+}
+
+#moltres {
+    background: rgb(119, 19, 19); 
+}
+
+#charmander {
+    background: orange; 
+}
+
+#squirtle {
+    background: blue; 
+}
+
+#bulbasaur {
+    background: forestgreen; 
+}
+
+#eevee {
+    background: rgb(255, 242, 242); 
+}
+
+#pikachu {
+    background: rgb(255, 255, 41); 
+}
+
+#mewtwo {
+    background: rgb(255, 168, 255); 
+}

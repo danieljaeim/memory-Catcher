@@ -1,0 +1,178 @@
+<!--Author--Dufe-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css">
+    <title>Match 'em All!</title>
+</head>
+<body>
+        <div id="audio">
+        <audio controls autoplay loop>
+                <source src="audio/PokemonMerge.mp3" type="audio/mpeg">
+                Your browser does not support the audio element
+        </audio>
+        </div>
+        <div class="game-container">
+                <h1 class="page-title">Match 'em All</h1>
+                    <div class="game-info">
+                        Best Score: <span id="best_score">--</span>
+                    </div>
+                    <div class="game-info">
+                        Flips: <span id="flips">--</span>
+                    </div>
+                    <button class="button">I'M READY!</button>
+                    <div class="board">
+                        <div class="memory-card" data-name='polywag'>
+                                <img class='front-face' src='img/polywag.png' alt='' id="polywag">
+                                <img class='back-face' src='img/pokeball.png' alt=''>
+                        </div>
+                        <div class="memory-card" data-name='polywag'>
+                                <img class='front-face' src='img/polywag.png' alt='' id="polywag">
+                                <img class='back-face' src='img/pokeball.png' alt=''>
+                        </div>
+                        <div class="memory-card" data-name='slowpoke'>
+                                <img class='front-face' src='img/slowpoke.png' alt='' id="slowpoke">
+                                <img class='back-face' src='img/pokeball.png' alt=''>
+                        </div>
+                        <div class="memory-card" data-name='slowpoke'>
+                                <img class='front-face' src='img/slowpoke.png' alt='' id="slowpoke">
+                                <img class='back-face' src='img/pokeball.png' alt=''>
+                        </div>
+                        <div class="memory-card" data-name='meowth'>
+                                <img class='front-face' src='img/meowth.png' alt='' id="meowth">
+                                <img class='back-face' src='img/pokeball.png' alt=''>
+                        </div>
+                        <div class="memory-card" data-name='meowth'>
+                                <img class='front-face' src='img/meowth.png' alt='' id="meowth">
+                                <img class='back-face' src='img/pokeball.png' alt=''>
+                        </div>    
+                        <div class="memory-card" data-name='magikarp'>
+                                <img class='front-face' src='img/magikarp.png' alt='' id="magikarp">
+                                <img class='back-face' src='img/pokeball.png' alt=''>
+                        </div>
+                        <div class="memory-card" data-name='magikarp'>
+                                <img class='front-face' src='img/magikarp.png' alt='' id="magikarp">
+                                <img class='back-face' src='img/pokeball.png' alt=''>
+                        </div>
+                        <div class="memory-card" data-name='abra'>
+                                <img class='front-face' src='img/abra.png' alt='' id="abra">
+                                <img class='back-face' src='img/pokeball.png' alt=''>
+                        </div>
+                        <div class="memory-card" data-name='abra'>
+                                <img class='front-face' src='img/abra.png' alt='' id="abra">
+                                <img class='back-face' src='img/pokeball.png' alt=''>
+                        </div>  
+                        <div class="memory-card" data-name='tangela'>
+                                <img class='front-face' src='img/tangela.png' alt='' id="tangela">
+                                <img class='back-face' src='img/pokeball.png' alt=''>
+                        </div>
+                        <div class="memory-card" data-name='tangela'>
+                                <img class='front-face' src='img/tangela.png' alt='' id="tangela">
+                                <img class='back-face' src='img/pokeball.png' alt=''>
+                        </div>
+                        <div class="memory-card" data-name='chansey'>
+                                <img class='front-face' src='img/chansey.png' alt='' id="chansey">
+                                <img class='back-face' src='img/pokeball.png' alt=''>
+                        </div>
+                        <div class="memory-card" data-name='chansey'>
+                                <img class='front-face' src='img/chansey.png' alt='' id="chansey">
+                                <img class='back-face' src='img/pokeball.png' alt=''>
+                        </div>
+                        <div class="memory-card" data-name='mew'>
+                                <img class='front-face' src='img/mew.png' alt='' id="mew">
+                                <img class='back-face' src='img/pokeball.png' alt=''>
+                        </div>
+                        <div class="memory-card" data-name='mew'>
+                                <img class='front-face' src='img/mew.png' alt='' id="mew">
+                                <img class='back-face' src='img/pokeball.png' alt=''>
+                        </div>
+                        <div class="memory-card" data-name='gengar'>
+                                <img class='front-face' src='img/gengar.png' alt='' id="gengar">
+                                <img class='back-face' src='img/pokeball.png' alt=''>
+                        </div>
+                        <div class="memory-card" data-name='gengar'>
+                                <img class='front-face' src='img/gengar.png' alt='' id="gengar">
+                                <img class='back-face' src='img/pokeball.png' alt=''>
+                        </div>    
+                        <div class="memory-card" data-name='articuno'>
+                                <img class='front-face' src='img/articuno.png' alt='' id="articuno">
+                                <img class='back-face' src='img/pokeball.png' alt=''>
+                        </div>
+                        <div class="memory-card" data-name='articuno'>
+                                <img class='front-face' src='img/articuno.png' alt='' id="articuno">
+                                <img class='back-face' src='img/pokeball.png' alt=''>
+                        </div>   
+                        <div class="memory-card" data-name='zaptos'>
+                                <img class='front-face' src='img/zaptos.png' alt='' id="zaptos">
+                                <img class='back-face' src='img/pokeball.png' alt=''>
+                        </div>
+                        <div class="memory-card" data-name='zaptos'>
+                                <img class='front-face' src='img/zaptos.png' alt='' id="zaptos">
+                                <img class='back-face' src='img/pokeball.png' alt='' >
+                        </div>
+                        <div class="memory-card" data-name='moltres'>
+                                <img class='front-face' src='img/moltres.png' alt='' id="moltres">
+                                <img class='back-face' src='img/pokeball.png' alt=''>
+                        </div>
+                        <div class="memory-card" data-name='moltres'>
+                                <img class='front-face' src='img/moltres.png' alt='' id="moltres">
+                                <img class='back-face' src='img/pokeball.png' alt=''>
+                        </div> 
+                        <div class="memory-card" data-name='charmander'>
+                                <img class='front-face' src='img/charmander.png' alt='' id="charmander">
+                                <img class='back-face' src='img/pokeball.png' alt=''>
+                        </div>
+                        <div class="memory-card" data-name='charmander'>
+                                <img class='front-face' src='img/charmander.png' alt='' id="charmander">
+                                <img class='back-face' src='img/pokeball.png' alt=''>
+                        </div>
+                        <div class="memory-card" data-name='squirtle'>
+                                <img class='front-face' src='img/squirtle.png' alt= '' id="squirtle">   
+                                <img class='back-face' src='img/pokeball.png' alt=''>
+                        </div>
+                        <div class="memory-card" data-name='squirtle'>
+                                <img class='front-face' src='img/squirtle.png' alt='' id="squirtle">
+                                <img class='back-face' src='img/pokeball.png' alt=''>
+                        </div>
+                        <div class="memory-card" data-name='bulbasaur'>
+                                <img class='front-face' src='img/bulbasaur.png' alt='' id="bulbasaur">
+                                <img class='back-face' src='img/pokeball.png' alt=''>
+                        </div>
+                        <div class="memory-card" data-name='bulbasaur'>
+                                <img class='front-face' src='img/bulbasaur.png' alt='' id="bulbasaur">
+                                <img class='back-face' src='img/pokeball.png' alt=''>
+                        </div>
+                        <div class="memory-card" data-name='eevee'>
+                                <img class='front-face' src='img/char-eevee.png' alt='' id="eevee">
+                                <img class='back-face' src='img/pokeball.png' alt=''>
+                        </div>
+                        <div class="memory-card" data-name='eevee'>
+                                <img class='front-face' src='img/char-eevee.png' alt='' id="eevee">
+                                <img class='back-face' src='img/pokeball.png' alt=''>
+                        </div>
+                        <div class="memory-card" data-name='pikachu'>
+                                <img class='front-face' src='img/pikachu.png' alt='' id="pikachu">
+                                <img class='back-face' src='img/pokeball.png' alt=''>
+                        </div>
+                        <div class="memory-card" data-name='pikachu'>
+                                <img class='front-face' src='img/pikachu.png' alt='' id="pikachu">
+                                <img class='back-face' src='img/pokeball.png' alt=''>
+                        </div>
+                        <div class="memory-card" data-name='mewtwo'>
+                                <img class='front-face' src='img/mewtwo.png' alt='' id="mewtwo">
+                                <img class='back-face' src='img/pokeball.png' alt=''>
+                        </div>
+                        <div class="memory-card" data-name='mewtwo'>
+                                <img class='front-face' src='img/mewtwo.png' alt='' id="mewtwo">
+                                <img class='back-face' src='img/pokeball.png' alt=''>
+                        </div>
+                    </div>
+        </div>
+    <script src="main.js"></script>
+
+</body>
+</html>
