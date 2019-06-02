@@ -1,5 +1,4 @@
-//Author__Dufe
-
+/@Author: Daniel Im 
 
 const cards = document.querySelectorAll('.memory-card');
 const score = document.getElementById('flips');
@@ -94,7 +93,6 @@ function gameOver() {
         container.removeEventListener('click', gameOver);
         button.style.visibility = 'visible';
         cards.forEach(card => card.classList.remove('flip'));
-        //shuffle(); 
         lockBoard = false; 
         score.innerHTML = '0';
         counter = 0; 
@@ -114,14 +112,6 @@ function conserveScore() {
         bestScore.innerHTML = localStorage.getItem('localScore');
     }
 }
-
-
-//for (var i = 0; i < cards.length; i += 1) {
-  //  var card = cards[i];
-    //card.addEventListener('click', flipCard);
-    //card.removeEventListener('click', gameOver);
-    //card.classList.add('.flip');
-
 
 //provides eventListeners to button and cards during reset
 function buttonLoad() {
