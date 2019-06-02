@@ -1,4 +1,4 @@
-/@Author: Daniel Im 
+//@Author: Daniel Im 
 
 const cards = document.querySelectorAll('.memory-card');
 const score = document.getElementById('flips');
