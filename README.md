@@ -1,7 +1,1 @@
-#memory-Catcher
-
-@Songs Used: PokeMon Theme Song
-            SMOSH: PokeMon Parody Song
-            
-Author: Daniel Im
-03.11.19: first-commit
+Have what it takes to catch them all? A pattern matching card-game inspired by the Pokemon series. 
