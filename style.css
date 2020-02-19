@@ -15,8 +15,8 @@
 body {
     height: 100vh; 
     background-image: url(img/background.gif); 
-    background-size: cover;
-    background-repeat: repeat-y;
+    background-size: 300vh;
+    background-repeat: no-repeat;
     background-position: center center; 
     display: flex;  
 }
@@ -70,8 +70,8 @@ h1{
 
 .game-container {
     position: relative; 
-    left: 0; 
-    right: 0; 
+    left: 10%;
+    right: 0%;
 }
 
 .button { 
